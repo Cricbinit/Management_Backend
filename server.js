@@ -25,7 +25,8 @@ mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
     app.listen(process.env.PORT, () =>
-      console.log(`Server running on https://management-frontend-yabg.vercel.app:5000`)
+      // console.log(`Server running on https://management-frontend-yabg.vercel.app:5000`)
+    console.log('server is running at port : http://localhost:5000')
     );
   })
   .catch(err => console.log(err));
